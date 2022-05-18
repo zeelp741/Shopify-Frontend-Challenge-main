@@ -7,7 +7,7 @@ import Form from './components/Form/Form';
 function App() {
 
 
-  const question = "Rate this idea from 1-10. \n";
+  const question = "Rate this idea. Also give a rating from 1-10.  \n";
 
 
   const [engine, setEngine] = useState('text-curie-001');
@@ -76,7 +76,10 @@ function App() {
               </select>
           </div>
 
-        <button type="button" className="btn btn-success mt-1" onClick={sendPrompt}>Submit</button>
+        
+          <button type="button" className="btn btn-success mt-1" onClick={sendPrompt}>Submit</button>
+
+          
 
         <h2 className="display-5 mt-5 ">Responses</h2>
         <div className="mb-5" style={{width: '40%', overflowY: 'auto', height: '450px'}}>
